@@ -60,7 +60,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 01",
     imgSrc: Fish01,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. \nProin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "md",
   },
   {
@@ -68,7 +68,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 02",
     imgSrc: Fish02,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nIn ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "md",
   },
   {
@@ -76,7 +76,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 03",
     imgSrc: Fish03,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam.\nDuis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -84,7 +84,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 04",
     imgSrc: Fish04,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. \nSuspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -92,7 +92,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 05",
     imgSrc: Fish05,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. \nProin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "md",
   },
   {
@@ -100,7 +100,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 06",
     imgSrc: Fish06,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. \nVestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. \nIn ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -108,7 +108,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 07",
     imgSrc: Fish07,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. \nProin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. \nSuspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -116,7 +116,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 08",
     imgSrc: Fish08,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. \nDuis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -124,7 +124,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 09",
     imgSrc: Fish09,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. \nVestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. \nSuspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -132,7 +132,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 10",
     imgSrc: Fish10,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. \nDuis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
   {
@@ -140,7 +140,7 @@ export const fishList: FishListItem[] = [
     name: "Tropical Fish 11",
     imgSrc: Fish11,
     detail:
-      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. Suspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
+      "Pellentesque sit amet condimentum ligula. Vestibulum vitae imperdiet sapien. Ut non risus varius, convallis turpis id, molestie tortor. Proin sit amet faucibus quam. Duis dapibus sit amet mi quis blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In ultricies consequat ullamcorper. Nunc suscipit metus justo, at dapibus massa varius ut. \nSuspendisse posuere interdum metus, eu pharetra arcu cursus id. Nam tempor orci at posuere viverra.",
     size: "sm",
   },
 ];

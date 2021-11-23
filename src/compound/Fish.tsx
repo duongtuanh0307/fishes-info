@@ -7,15 +7,28 @@ type Props = {
   fish: FishListItem;
   swimmingForward: boolean;
   className?: string;
+  openFishInfo: () => void;
+  handleChangeCurrentFish: (fishId: number) => void;
 };
 
-const Fish: FC<Props> = ({ fish, swimmingForward, className }) => {
+const Fish: FC<Props> = ({
+  fish,
+  swimmingForward,
+  className,
+  openFishInfo,
+  handleChangeCurrentFish,
+}) => {
+  const handleClick = () => {
+    openFishInfo();
+    handleChangeCurrentFish(fish.id);
+  };
+
   return (
     <FishWrapper
       className={className}
       size={fish.size}
       swimmingForward={swimmingForward}
-      onClick={() => alert(fish.name)}
+      onClick={handleClick}
     >
       <img src={fish.imgSrc} alt={fish.name} />
     </FishWrapper>

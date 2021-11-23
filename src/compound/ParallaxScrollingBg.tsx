@@ -5,13 +5,19 @@ import oceanScene from "../assets/marine_bg.jpeg";
 import ScubeDiver from "./ScubeDiver";
 import FishList from "./FishList";
 import Fish from "./Fish";
-import { useMemo, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import { fishList } from "../data/fish_base";
 import { makeKPermutaion } from "../utilities/helper";
 
-const HomePage = () => {
+type Props = {
+  openFishInfo: () => void;
+  handleChangeCurrentFish: (fishId: number) => void;
+};
+
+const HomePage: FC<Props> = ({ handleChangeCurrentFish, openFishInfo }) => {
   const x = useMotionValue(0);
   const [movingForward, setMovingForward] = useState(true);
+
   const upperLayerX = useTransform(x, (value) => value / -1) as MotionValue<
     number | string
   >;
@@ -64,23 +70,29 @@ const HomePage = () => {
         top={0}
         x={upperLayerX}
       >
-        <TipText>Click to view detail info of the fish</TipText>
+        <TipText>Click any image to view the fish's detail info</TipText>
       </Frame>
       <Frame
-        width={"800vw"}
+        width={"500vw"}
         background={""}
         position='absolute'
-        top={0}
+        top={"10vh"}
         x={firstFishListX}
         left={0}
-        style={{ zIndex: 10, pointerEvents: "none" }}
+        style={{ zIndex: 10, pointerEvents: "none", maxHeight: "30vh" }}
       >
-        <FishList fishList={fishList01} swimmingForward={movingForward} />
+        <FishList
+          fishList={fishList01}
+          swimmingForward={movingForward}
+          openFishInfo={openFishInfo}
+          handleChangeCurrentFish={handleChangeCurrentFish}
+        />
       </Frame>
       <Frame
+        height={0}
         background={""}
         position='absolute'
-        top={"20%"}
+        top={"20vh"}
         x={upperLayerX}
         style={{ zIndex: 20, pointerEvents: "none" }}
       >
@@ -90,32 +102,48 @@ const HomePage = () => {
         width={"1900vw"}
         background={""}
         position='absolute'
-        top={0}
+        top={"40vh"}
         left={-300}
         x={secondFishListX}
-        style={{ zIndex: 30, pointerEvents: "none" }}
+        style={{ zIndex: 30, pointerEvents: "none", maxHeight: "30vh" }}
       >
-        <FishList fishList={fishList02} swimmingForward={!movingForward} />
+        <FishList
+          fishList={fishList02}
+          swimmingForward={!movingForward}
+          openFishInfo={openFishInfo}
+          handleChangeCurrentFish={handleChangeCurrentFish}
+        />
       </Frame>
       <Frame
         width={"2050vw"}
         background={""}
         position='absolute'
-        top={0}
+        top={"70vh"}
         left={500}
         x={thirdFishListX}
-        style={{ zIndex: 40, pointerEvents: "none" }}
+        style={{ zIndex: 40, pointerEvents: "none", maxHeight: "30vh" }}
       >
-        <FishList fishList={fishList03} swimmingForward={!movingForward} />
+        <FishList
+          fishList={fishList03}
+          swimmingForward={!movingForward}
+          openFishInfo={openFishInfo}
+          handleChangeCurrentFish={handleChangeCurrentFish}
+        />
       </Frame>
       <Frame
-        width='50vw'
+        width='60vw'
         background={""}
         position='absolute'
-        top={"10%"}
-        right={0}
+        top={"15vh"}
+        right={-600}
+        style={{ zIndex: 50 }}
       >
-        <Fish fish={shark} swimmingForward={false} />
+        <Fish
+          fish={shark}
+          swimmingForward={false}
+          openFishInfo={openFishInfo}
+          handleChangeCurrentFish={handleChangeCurrentFish}
+        />
       </Frame>
     </Scroll>
   );
@@ -130,7 +158,11 @@ const TipText = styled("p")({
   width: "100vw",
   textAlign: "center",
   padding: 24,
-  marginTop: 40,
+  fontSize: 20,
+  fontWeight: 600,
+  color: "#fff",
+  textShadow: "0px 0px 3px #000",
+  letterSpacing: 1.5,
 });
 
 const Background = styled(motion.div)({

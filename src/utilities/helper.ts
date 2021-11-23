@@ -7,4 +7,9 @@ const makeKPermutaion = (arr: any[], k: number) => {
   return pickedIndex.map((it) => arr[it]);
 };
 
-export { makeKPermutaion };
+const calcRemainder = (dividend: number, divisor: number) => {
+  const quotient = Math.floor(dividend / divisor);
+  return dividend - quotient * divisor;
+};
+
+export { makeKPermutaion, calcRemainder };
