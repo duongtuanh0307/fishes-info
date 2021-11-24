@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion, MotionValue } from "framer-motion";
+import { AnimatePresence, motion, MotionValue } from "framer-motion";
 import { Frame, Scroll, useTransform, useMotionValue } from "framer";
 import oceanScene from "../assets/marine_bg.jpeg";
 import ScubeDiver from "./ScubeDiver";
@@ -17,6 +17,7 @@ type Props = {
 const HomePage: FC<Props> = ({ handleChangeCurrentFish, openFishInfo }) => {
   const x = useMotionValue(0);
   const [movingForward, setMovingForward] = useState(true);
+  const [isShowTip, setShowTip] = useState(true);
 
   const upperLayerX = useTransform(x, (value) => value / -1) as MotionValue<
     number | string
@@ -63,15 +64,44 @@ const HomePage: FC<Props> = ({ handleChangeCurrentFish, openFishInfo }) => {
       drag={false}
     >
       <Background />
-      <Frame
-        width={"100vw"}
-        background={""}
-        position='absolute'
-        top={0}
-        x={upperLayerX}
-      >
-        <TipText>Click any image to view the fish's detail info</TipText>
-      </Frame>
+      <AnimatePresence>
+        {isShowTip && (
+          <Frame
+            width={"100vw"}
+            background={""}
+            position='absolute'
+            top={0}
+            x={upperLayerX}
+          >
+            <TipText
+              initial={{
+                textShadow: "0px 0px 2px #fafa2f",
+                scale: 1,
+                opacity: 1,
+              }}
+              animate={{
+                textShadow: "2px 2px 10px #fafa2f",
+                scale: 1.1,
+                opacity: 1,
+              }}
+              transition={{
+                duration: 2,
+                repeat: Infinity,
+                repeatType: "reverse",
+              }}
+              onClick={() => setShowTip(false)}
+              exit={{
+                textShadow: "2px 2px 100px #fafa2f",
+                scale: 1.5,
+                opacity: 0,
+                transition: { duration: 1 },
+              }}
+            >
+              Click any image to view the fish's detail info
+            </TipText>
+          </Frame>
+        )}
+      </AnimatePresence>
       <Frame
         width={"500vw"}
         background={""}
@@ -151,18 +181,17 @@ const HomePage: FC<Props> = ({ handleChangeCurrentFish, openFishInfo }) => {
 
 export default HomePage;
 
-const TipText = styled("p")({
-  position: "absolute",
-  top: 0,
-  left: 0,
+const TipText = styled(motion.p)({
   width: "100vw",
   textAlign: "center",
   padding: 24,
-  fontSize: 20,
-  fontWeight: 600,
+  fontSize: 22,
+  fontWeight: 500,
   color: "#fff",
-  textShadow: "0px 0px 3px #000",
   letterSpacing: 1.5,
+  "&: hover": {
+    cursor: "default",
+  },
 });
 
 const Background = styled(motion.div)({
